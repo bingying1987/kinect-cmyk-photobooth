@@ -12,6 +12,7 @@ As one of several experiences designed and developed for an open house party hos
 * Visual Studio 2015
 * Kinect For Windows v2 sensor and SDK
 * ImageProcessor (.NET library loaded via NuGet package configuration)
+* Display output or projection supporting 1080p (1920 x 1080 resolution)
 
 ## Usage
 
