@@ -25,6 +25,7 @@ namespace frog.Windows.Kinect.CMYKPhotoBooth
 	public partial class MainWindow : Window
     {
 		private const string PHOTO_PUBLISHING_UNC_PATH = @"\\10.118.105.226.Kinect.CMYKPhotoBooth\";
+		private const string PHOTO_PUBLISHING_URL = @"http://apps.frogdesign.com/photobooth/";
 		private const bool IS_PHOTO_PUBLISHING_ENABLED = false;
 
 		private readonly string localPhotosSavePath = System.Environment.CurrentDirectory + @"\Photos";
@@ -153,6 +154,8 @@ namespace frog.Windows.Kinect.CMYKPhotoBooth
 
 					countdown.Visibility = Visibility.Collapsed;
 					captures.Visibility = Visibility.Collapsed;
+
+					photoDownloadUrl.Text = PHOTO_PUBLISHING_URL;
 				}
 			}
 			else
